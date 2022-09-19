@@ -1,5 +1,5 @@
 ## SELECT 
-1. Selezionare tutti gli studenti nati nel 1990 (160) ...
+1. Selezionare tutti gli studenti nati nel 1990 (160)
     SELECT * FROM `students` WHERE `date_of_birth` >= '1990-01-01' AND `date_of_birth` <= '1990-12-31';
 
 2. Selezionare tutti i corsi che valgono più di 10 crediti (479)
@@ -23,7 +23,7 @@
 8.	Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
     SELECT * FROM `teachers` WHERE `phone` IS NULL;
 
-// ********** GROUP BY **********
+## GROUP BY
 
 1. Contare quanti iscritti ci sono stati ogni anno.
     
