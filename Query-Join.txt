@@ -54,7 +54,7 @@ JOIN teachers ON teachers.id = course_teacher.teacher_id;
 
 6.	Selezionare tutti i docenti che insegnano nel Dipartimento di Matematica (54)
 
-SELECT DISTINCT(CONCAT(teachers.name, ' ', teachers.surname)( AS nome_e_cognome_professore, courses.id AS id_corso,degrees.name AS degree_name, departments.name AS nome_dipartimento
+SELECT DISTINCT CONCAT(teachers.name, ' ', teachers.surname) AS nome_e_cognome_professore, courses.id AS id_corso,degrees.name AS degree_name, departments.name AS nome_dipartimento
 FROM teachers
 JOIN course_teacher ON course_teacher.teacher_id = teachers.id
 JOIN courses ON course_teacher.course_id = courses.id
